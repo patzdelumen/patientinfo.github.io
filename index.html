@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            background: linear-gradient( rgba(238, 61, 61, 0.442),rgba(101, 216, 69, 0.719));
+
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient( rgba(238, 61, 61, 0.442),rgba(101, 216, 69, 0.719));
+            border: 2px solid black;
+            margin: 200px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 5px;
+            min-width: 300px;
+        }
+        
+        input
+        {
+            display: grid;
+            width: 230px;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px;
+            margin-bottom: 10px;
+
+        }
+        label
+        {
+            font-size: 20px;
+        }
+        button
+        {
+            width: 254px;
+            padding: 3px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: rgba(43, 200, 75, 0.164);
+            box-shadow: 4px 4px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form name="my_form" method="post">
+            <h1>LOG-IN</h1>
+            <input type="text" name="a" placeholder="Username" id="username"/>
+            <label for="username">Username:</label>
+            <input type="password" name="password" placeholder="Password" id="pass"/>
+            <label for="password">Password:</label><br>
+            <button type="submit" id="btn" onclick="loginform()">login</button>
+
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

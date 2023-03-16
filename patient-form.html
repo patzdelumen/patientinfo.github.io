@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="patientform.css">
+    <title>Patient-form</title>
+</head>
+<body>
+    <button type="button" id="logout">Log-out</button>
+    <h1 id="pform">Patient Form</h1>
+    <h2 id="qform">Welcome, user</h2>
+    <div class="container">
+        <form action="" class="form">
+            <div class="name">
+            <input type="text" name="fname" id="fname">
+            <input type="text" name="mname" id="mname">
+            <input type="text" name="lname" id="lname">
+            <label for="fname">First Name<span class="errorMessage"></span></label>
+            <label for="lname" id="mname">Middle Name</label>
+            <label for="lname" id="lname">Last Name<span class="errorMessage"></span></label>
+            </div>
+            <div class="address">
+            <input type="text" name="address" placeholder="" id="address"/>
+            <label for="address">Address</label><span class="errorMessage"></span>
+            </div>
+            <div class="row">
+            <input type="date" id="bday" name="bday">
+            <input type="number" id="contact" name="contact">
+            <div class="gender">
+                <label for="">Gender:</label>
+                <input type="radio" name="gender" id="male">Male
+                <input type="radio" name="gender" id="female">Female
+            </div>
+        </div>
+        <label for="bday" id="biday">Birthday<span class="errorMessage"></span></label>
+        <label for="contact" id="cons">Contact Number<span class="errorMessage"></span></label>
+    <h1 id="mhistory">Medical History</h1>
+            <div class="medicalhistory">
+                <input type="checkbox" name="Asthma" id="mehistory">
+                <label for="asthma">Asthma</label>
+                <input type="checkbox" name="Diabetes" id="mehistory">
+                <label for="diabetes">Diabetes</label>
+                <input type="checkbox" name="HeartDisease" id="mehistory">
+                <label for="heartdisease">Heart Disease</label>
+                <input type="checkbox" name="KidneyDisease" id="mehistory">
+                <label for="kidneydisease">Kidney Disease</label>
+                <input type="checkbox" name="cancer" id="mehistory">
+                <label for="cancer">Cancer</label>
+                <input type="checkbox" name="epilepsy" id="mehistory">
+                <label for="heartdisease">epilepsy</label>
+                <input type="checkbox" name="Hypertension" id="mehistory">
+                <label for="kidneydisease">Hypertension</label>
+                <input type="checkbox" name="others" id="mehistory">
+                <label for="cancer">Others</label>
+            </div>
+            <div class="currentsyntoms">
+                <h1 id="c">Current Symptoms</h1>
+                <select name="currentsyntoms" id="currentsyntoms">
+                    <option value="Respiratory">Respiratory</option>
+                    <option value="Gastrointestinal">Gastrointestinal</option>
+                    <option value="Nervous">Nervous</option>
+                    <option value="Musculoskeletal">Musculoskeletal</option>
+                    <option value="Skin">Skin</option>
+                    
+                </select>
+                
+                <label for="">Are you current taking medication?</label>
+                <input type="radio"  name="medication" id="yes">
+                <label for="medication">Yes</label>
+                <input type="radio" name="medication" id="no">
+                <label for="medication">No</label>
+                <input type="text" name="" id="ifyes"/>
+            
+            </div>
+            <center><button type="submit" id="submit">Submit</button></center>
+    </div>
+
+
+
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

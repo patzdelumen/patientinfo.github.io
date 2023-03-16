@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient( rgba(253, 111, 111, 0.442),rgba(101, 216, 69, 0.719));
+
+}
+#logout{
+    float: right;
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 2px 5px 6px;
+    border-radius: 10px;
+    
+}
+#pform{
+    margin-left: 20px;
+}
+#qform{
+    margin-left: 20px;
+}
+.container
+{
+    margin: 100px;
+    
+}
+.name{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+#mname{
+    margin-left: 30px;
+}
+#lname{
+    margin-left: 30px;
+}
+input{
+    padding: 10px;
+}
+.format{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+#address{
+
+    margin-top: 30px;
+    width: 100%;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows:repeat(2, auto) ;
+    margin-top: 30px;
+    grid-column-gap: 30px;
+    
+}
+#cons{
+    margin-left: 300px;
+}
+#female{
+    margin-left: 30px;
+}
+#mhistory{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.medicalhistory{
+   
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-row-gap: 30px;
+    margin-bottom: 15px;
+}
+#c{
+    font-size: 20px;
+}
+select{
+    width: 150px;
+    margin-right: 250px;
+}
+#submit{
+    margin: 20px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(32, 180, 57, 0.433);
+    box-shadow: 2px 5px 6px;
+}
+span{
+    color: red;
+}
